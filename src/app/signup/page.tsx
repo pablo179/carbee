@@ -1,8 +1,8 @@
-export default function Login() {
-    return (
+export default function Signup() {
+    return(
         <div>
-            <h1>Welcome Back!</h1>
-            <h2>Sign in to Carbee</h2>
+            <h1>Welcome!</h1>
+            <h2>Sign up to Carbee</h2>
             <form>
                 <div>
                     <label htmlFor="email">Email</label>
@@ -12,9 +12,13 @@ export default function Login() {
                     <label htmlFor="password">Password</label>
                     <input type="password" id="password" required />
                 </div>
-                <button type="submit">Sign in</button>
+                <div>
+                    <label htmlFor="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" required />
+                </div>
+                <button type="submit">Sign up</button>
                 <span>
-                    Don&apos;t have an account? <a href="/signup">Sign up</a>
+                    Already have an account? <a href="/login">Sign in</a>
                 </span>
             </form>
         </div>

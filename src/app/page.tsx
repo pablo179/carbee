@@ -1,9 +1,12 @@
-import styles from './page.module.css'
+import { redirect } from 'next/navigation';
+import { cookies } from 'next/headers'
 
 export default function Home() {
-  return (
-    <main className={styles.main}>
-      <h1>Main</h1>
-    </main>
-  )
+  const cookieStore = cookies()
+  const user = cookieStore.get('user')
+  if(!user) {
+    return redirect('/login')
+  } else {
+    return redirect('/dashboard')
+  }
 }
