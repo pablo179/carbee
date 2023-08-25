@@ -6,6 +6,10 @@ module.exports = {
         source: "/auth",
         destination: `${basePath}/api/auth`,
       },
+      {
+        source: "/appointments",
+        destination: `${basePath}/api/appointments`,
+      }
     ];  
   },
 };

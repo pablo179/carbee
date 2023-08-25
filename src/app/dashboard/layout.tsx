@@ -11,7 +11,7 @@ export default function RootLayout({
 }) {
   const { authUser, logout } = useAuth();
   if (!authUser) {
-    return redirect("/auth/login");
+    return redirect("/login");
   }
   return (
     <div className={styles.dashboard}>
@@ -19,7 +19,7 @@ export default function RootLayout({
         <div> Username </div>
         <button className={styles.logout} onClick={logout} > Log out</button>
       </nav>
-      {children}
+        {children}
     </div>
   );
 }

@@ -93,3 +93,18 @@ h2 {
   color: var(--brand-primary);
   text-align: center;
 }
+
+.loading_spinner {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 7px solid var(--brand-secondary-500);
+  border-top-color: transparent;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

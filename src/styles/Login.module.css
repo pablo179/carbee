@@ -63,23 +63,6 @@
     outline: none;
 }
 
-.legend {
-    font-size: 1rem;
-    font-weight: 600;
-    margin-top: 10px;
-    width: 100%;
-    text-align: center;
-}
-
-.legend a {
-    color: var(--brand-primary);
-    font-weight: 600;
-}
-
-.legend a:hover {
-    text-decoration: underline;
-}
-
 .error {
     color: var(--color-danger);
     font-size: 1rem;
