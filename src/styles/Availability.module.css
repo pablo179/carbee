@@ -1,0 +1,51 @@
+.dateSelect {
+    width: 100%;
+    height: 40px;
+    border: 1px solid var(--gray-200);
+    border-radius: 7px;
+    padding: 0 10px;
+}
+.dateSelect::-webkit-calendar-picker-indicator {
+    background: transparent;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid var(--gray-200);
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.error {
+    color: var(--color-danger);
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 7px 0;
+    text-align: center;
+}
+
+.timesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+    margin: 20px 0;
+}
+.time {
+    width: 80%;
+    max-width: 300px;
+    height: 40px;
+    border: 1px solid var(--gray-200);
+    border-radius: 7px;
+    margin: 5px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.time:hover {
+    background: var(--gray-200);
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out;
+}

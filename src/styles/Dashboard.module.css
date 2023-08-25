@@ -18,6 +18,22 @@
   padding: 0 20px;
 }
 
+.dashboard__navigation button {
+  text-decoration: none;
+  color: var(--brand-primary-500);
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  margin: 0 20px;
+}
+.dashboard__navigation button:hover {
+  color: var(--brand-primary-300);
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
+
 .logout {
   margin-right: 20px;
   background-color: var(--brand-secondary-500);
