@@ -17,6 +17,8 @@ export default function Dashboard() {
     previousCursor: "",
   });
   const [fetching, setFetching] = useState(false);
+  // handler to get appointments in case of next or previous page
+  //NOTE: hasPreviousPage probably has a bug, it is always false
   const getAppointmentHandler = (nextCursor?: string, prevCursor?: string) => {
     if (!authUser) {
       return;

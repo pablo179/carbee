@@ -1,6 +1,7 @@
 import styles from "@/styles/Dashboard.module.css";
 import { AppointmentDto } from "@/types";
 
+  // this function is used to convert the date string to 00:00 AM/PM format
 const localDateStringTime = (date: string) => {
   return new Date(date).toLocaleTimeString("en-US", {
     hour: "numeric",
@@ -13,6 +14,7 @@ export default function AppointmentComponent({
   duration,
   workOrder,
 }: AppointmentDto) {
+  // this function is used to convert the date string to August, 12, 00:00 AM/PM format
   const formattedDate = new Date(scheduledTime).toLocaleDateString("en-US", {
     month: "long",
     day: "numeric",

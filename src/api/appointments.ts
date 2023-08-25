@@ -20,6 +20,7 @@ export async function getAppointmentsRequest(
       },
       headers: { Authorization: `Bearer ${token}` },
     });
+    // Format the response to match the AppointmentDto
     const formattedAppointments = response.data.edges.map(
       (appointment: { node: AppointmentDto }) => {
         return {

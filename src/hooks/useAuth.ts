@@ -5,6 +5,7 @@ export default function useAuth() {
   const [authUser, setAuthUser] = useState<string | null>(
     localStorage.getItem("authUser")
   );
+  // if login returns null then there was no error
   const login = async (
     username: string,
     password: string

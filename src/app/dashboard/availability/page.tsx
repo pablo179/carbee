@@ -10,6 +10,7 @@ export default function Availavility() {
   const [availability, setAvailability] = useState<string[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [fetching, setFetching] = useState(false);
+  // this function is used to convert the date string to 00:00 AM/PM format
   const localDateStringTime = (date: string) => {
     return new Date(date).toLocaleTimeString("en-US", {
       hour: "numeric",
@@ -17,6 +18,7 @@ export default function Availavility() {
     });
   }
   const handleDateChange = async (e: any) => {
+    // validation of user token and date different to avoid unnecessary api calls
     if (!authUser) {
       return;
     }
