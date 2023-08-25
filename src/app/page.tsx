@@ -1,11 +1,12 @@
+'use client'
+
 import { redirect } from 'next/navigation';
-import { cookies } from 'next/headers'
+import useAuth from '@/hooks/useAuth';
 
 export default function Home() {
-  const cookieStore = cookies()
-  const user = cookieStore.get('user')
-  if(!user) {
-    return redirect('/login')
+  const { authUser } = useAuth();
+  if(!authUser) {
+    return redirect('/auth/login')
   } else {
     return redirect('/dashboard')
   }

@@ -1,10 +1,11 @@
 module.exports = {
-    async rewrites() {
-      return [
-        {
-            source: '/auth/:path*',
-            destination: process.env.NEXT_PUBLIC_API_URL + '/:path*',
-        }
-      ]
-    },
-  }
+  async rewrites() {
+    const basePath = process.env.NEXT_PUBLIC_API_URL
+    return [
+      {
+        source: "/auth",
+        destination: `${basePath}/api/auth`,
+      },
+    ];  
+  },
+};

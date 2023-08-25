@@ -1,15 +1,9 @@
-import { redirect } from 'next/navigation';
-import { cookies } from 'next/headers'
+import styles from "@/styles/Dashboard.module.css";
 
 export default function Dashboard() {
-    const cookieStore = cookies()
-    const user = cookieStore.get('user')
-    /*if(!user) {
-        return redirect('/login')
-    } */
-    return (
-        <>
-            <h1>Dashboard</h1>
-        </>
-    )
+  return (
+    <>
+      <h1>Dashboard</h1>
+    </>
+  );
 }

@@ -79,3 +79,11 @@
 .legend a:hover {
     text-decoration: underline;
 }
+
+.error {
+    color: var(--color-danger);
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 7px 0;
+    text-align: center;
+}
